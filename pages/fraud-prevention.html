@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fraud prevention data · Zody AI Ltd</title>
-  <meta name="description" content="How software that uses VAT MTD or Income Tax Self Assessment MTD APIs captures and validates the fraud prevention headers HMRC requires.">
+  <meta name="description" content="How Zody AI Ltd implements and validates fraud prevention controls, request integrity and header requirements for regulated API integrations.">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
@@ -26,32 +26,32 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="kicker">07 · HMRC-specific control area</span>
-        <h1>Fraud prevention data</h1>
-        <p class="lead">How software that uses VAT MTD or Income Tax Self Assessment MTD APIs captures and validates the fraud prevention headers HMRC requires.</p>
-        <div class="page-meta"><span class="tag">Header data</span><span class="tag">Validation</span><span class="tag">MTD APIs</span></div>
+        <span class="kicker">07 · API integrity &amp; fraud controls</span>
+        <h1>API fraud prevention</h1>
+        <p class="lead">How Zody AI Ltd implements request integrity controls, fraud prevention headers and validation for regulated API integrations including VAT MTD and Income Tax Self Assessment MTD.</p>
+        <div class="page-meta"><span class="tag">Request integrity</span><span class="tag">Header validation</span><span class="tag">Regulated APIs</span></div>
       </div>
     </section>
     <section class="section">
       <div class="container split">
         <div>
           <h2>Questions this page answers</h2>
-          <div class="question-list"><div class="question"><h3>Do you submit fraud prevention data where required?</h3><p>Where HMRC APIs require it, we collect and transmit the necessary header data to identify the request environment and reduce fraud risk.</p></div><div class="question"><h3>Have you validated the header implementation?</h3><p>Headers are validated for correct format and end-to-end transmission before and after go-live.</p></div><div class="question"><h3>How do you keep the data accurate?</h3><p>The implementation minimises spoofing risk, documents the source of header values and is reviewed whenever the client or backend stack changes.</p></div></div>
+          <div class="question-list"><div class="question"><h3>Do you implement fraud prevention controls where required?</h3><p>Where regulated APIs require fraud prevention data, we collect and transmit the necessary header values to identify the request environment and reduce fraud risk.</p></div><div class="question"><h3>How is the implementation validated?</h3><p>Headers are validated for correct format and end-to-end behaviour before go-live and after any significant change to the stack.</p></div><div class="question"><h3>How is accuracy maintained over time?</h3><p>The implementation documents the source of each header value, minimises spoofing risk and is reviewed whenever client or backend components change.</p></div></div>
         </div>
         <div>
           <div class="answer-block">
             <h2>Implementation posture</h2>
-<p>Where Zody AI Ltd uses HMRC APIs that require fraud prevention data, the software collects and transmits the necessary header information in accordance with HMRC’s specification. That includes validating header format, confirming end-to-end behaviour before go-live and keeping the implementation under review as the stack evolves.</p>
+<p>Where regulated API integrations require fraud prevention data, Zody AI Ltd implements the necessary controls in accordance with the published specification. That means validating header format and content, confirming end-to-end behaviour before go-live and keeping the implementation under active review as the underlying stack evolves.</p>
 <ul>
-  <li>Fraud prevention headers only where the API requires them.</li>
-  <li>Controlled collection of device, application and request context.</li>
-  <li>Testing against HMRC’s fraud prevention validation path before go-live.</li>
-  <li>Review processes when mobile, web or proxy behaviour changes.</li>
+  <li>Fraud prevention headers submitted only where the API specification requires them.</li>
+  <li>Controlled, documented collection of device, application and request context.</li>
+  <li>Pre-go-live validation against the platform’s fraud prevention test tooling.</li>
+  <li>Review triggered whenever mobile, web or proxy components change.</li>
 </ul>
           </div>
           <div class="panel card" style="margin-top:18px;">
-      <h3>Applicable APIs</h3>
-      <p class="small">Fraud prevention header requirements apply to VAT MTD and Income Tax Self Assessment MTD APIs. Controls are enforced before any such integration goes live and reviewed whenever the implementation changes.</p>
+      <h3>Applicable integrations</h3>
+      <p class="small">Fraud prevention header requirements currently apply to VAT MTD and Income Tax Self Assessment MTD API integrations. Controls are enforced before any such integration goes live and reviewed whenever the implementation or stack changes.</p>
     </div>
         </div>
       </div>
