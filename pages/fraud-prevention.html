@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fraud prevention data · Zody AI Ltd</title>
+  <meta name="description" content="How software that uses VAT MTD or Income Tax Self Assessment MTD APIs captures and validates the fraud prevention headers HMRC requires.">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="../index.html"><div class="logo">Z</div><span>Zody AI Ltd</span></a>
+      <nav class="navlinks"><a data-nav href="../index.html">Overview</a>
+<a data-nav href="organisation.html">Organisation</a>
+<a data-nav href="marketing.html">Marketing</a>
+<a data-nav href="development.html">Development</a>
+<a data-nav href="service-management.html">Service Management</a>
+<a data-nav href="personal-data.html">Personal Data</a>
+<a data-nav href="security.html">Security</a>
+<a data-nav href="fraud-prevention.html">Fraud Prevention</a>
+<a data-nav href="authorisation.html">Authorisation</a></nav>
+      <a class="button secondary" href="compliance-index.html">Index</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">07 · HMRC-specific control area</span>
+        <h1>Fraud prevention data</h1>
+        <p class="lead">How software that uses VAT MTD or Income Tax Self Assessment MTD APIs captures and validates the fraud prevention headers HMRC requires.</p>
+        <div class="page-meta"><span class="tag">Header data</span><span class="tag">Validation</span><span class="tag">MTD APIs</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Questions this page answers</h2>
+          <div class="question-list"><div class="question"><h3>Do you submit fraud prevention data where required?</h3><p>Relevant HMRC APIs expect header data that helps identify the request environment and reduce fraud risk.</p></div><div class="question"><h3>Have you validated the header implementation?</h3><p>Before production use, the business should test that headers are correctly formatted and transmitted.</p></div><div class="question"><h3>How do you keep the data accurate?</h3><p>The application should minimise spoofing, document the source of header values and monitor implementation changes.</p></div></div>
+        </div>
+        <div>
+          <div class="answer-block">
+            <h2>Implementation posture</h2>
+<p>Where Zody AI Ltd uses HMRC APIs that require fraud prevention data, the software is expected to collect and transmit the necessary header information in accordance with HMRC’s specification. That includes validating the format of header values, checking end-to-end behaviour before live use and keeping the implementation under review as the client and backend stack evolve.</p>
+<ul>
+  <li>Fraud prevention headers only where the API requires them.</li>
+  <li>Controlled collection of device, application and request context.</li>
+  <li>Testing against HMRC’s fraud prevention validation path before go-live.</li>
+  <li>Review processes when mobile, web or proxy behaviour changes.</li>
+</ul>
+          </div>
+          <div class="panel card" style="margin-top:18px;">
+      <h3>Practical note</h3>
+      <p class="small">If your current product does not yet submit to VAT MTD or ITSA MTD APIs, keep this page, but state that the controls are planned and will be enforced before that integration goes live.</p>
+    </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><div class="logo">Z</div><span>Zody AI Ltd</span></div>
+      <p class="small">This site is designed to answer due diligence questions clearly, with one page per HMRC-oriented compliance area.</p>
+      <p class="small">Contact: hello@zody-ai.uk</p>
+    </div>
+    <div>
+      <strong>Core links</strong>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="compliance-index.html">Compliance Index</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

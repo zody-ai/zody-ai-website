@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development practices · Zody AI Ltd</title>
+  <meta name="description" content="How the company structures code, testing, environments, releases, error handling and accessibility so integrations are stable and supportable.">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="../index.html"><div class="logo">Z</div><span>Zody AI Ltd</span></a>
+      <nav class="navlinks"><a data-nav href="../index.html">Overview</a>
+<a data-nav href="organisation.html">Organisation</a>
+<a data-nav href="marketing.html">Marketing</a>
+<a data-nav href="development.html">Development</a>
+<a data-nav href="service-management.html">Service Management</a>
+<a data-nav href="personal-data.html">Personal Data</a>
+<a data-nav href="security.html">Security</a>
+<a data-nav href="fraud-prevention.html">Fraud Prevention</a>
+<a data-nav href="authorisation.html">Authorisation</a></nav>
+      <a class="button secondary" href="compliance-index.html">Index</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">03 · Building software responsibly</span>
+        <h1>Development practices</h1>
+        <p class="lead">How the company structures code, testing, environments, releases, error handling and accessibility so integrations are stable and supportable.</p>
+        <div class="page-meta"><span class="tag">Version control</span><span class="tag">Testing</span><span class="tag">Accessibility</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Questions this page answers</h2>
+          <div class="question-list"><div class="question"><h3>Do you follow structured development practices?</h3><p>The software is built through version control, peer review, environment separation and release discipline.</p></div><div class="question"><h3>How do you handle errors?</h3><p>API failures, user errors and operational faults are logged, surfaced appropriately and prevented from corrupting data.</p></div><div class="question"><h3>Do you consider accessibility?</h3><p>Web-based software is designed with WCAG AA expectations in mind so key user journeys remain accessible.</p></div></div>
+        </div>
+        <div>
+          <div class="answer-block">
+            <h2>Engineering approach</h2>
+<p>Zody AI Ltd uses standard software engineering controls to reduce release risk and improve traceability. Source code is maintained in version control, environments are separated between development, staging and production, and releases are tested before deployment. This reduces the chance that experimental changes affect live customer data.</p>
+<ul>
+  <li>Automated and manual testing before production releases.</li>
+  <li>Rollback planning for critical changes.</li>
+  <li>Error handling designed to fail safely and preserve data integrity.</li>
+  <li>Accessibility considered in core flows, forms and navigation structures.</li>
+</ul>
+          </div>
+          <div class="detail-grid" style="margin-top:18px;">
+      <div class="panel card"><h3>Environment model</h3><p>Development, staging and production should remain logically separated, with restricted credentials and auditability around deployment.</p></div>
+      <div class="panel card"><h3>Error handling goal</h3><p>Users should get a clear message, operators should get logs and alerts, and systems should avoid silent failure or partial write corruption.</p></div>
+    </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><div class="logo">Z</div><span>Zody AI Ltd</span></div>
+      <p class="small">This site is designed to answer due diligence questions clearly, with one page per HMRC-oriented compliance area.</p>
+      <p class="small">Contact: hello@zody-ai.uk</p>
+    </div>
+    <div>
+      <strong>Core links</strong>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="compliance-index.html">Compliance Index</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
